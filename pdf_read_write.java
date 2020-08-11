@@ -53,30 +53,7 @@ public class pdf_read_write {
 
 	public static void main(String[] args) throws Exception{
 
-        //byte[] pdfBytes;
-
-
-        //String pathString = new String ("/Users/Anika/Desktop/python_practice/currie/sample.pdf");
-       // pdfBytes = loadFile(pathString);
-
-       // byte[] pdf_Byte_docfile = new byte[(int) pdfBytes.length];
-
-       /// byte[] encoded_pdf_bytes = Base64.getEncoder().encode(pdf_Byte_docfile);
-       // OutputStream out = new FileOutputStream("out.pdf");
-       // out.write(encoded_pdf_bytes);
-       // out.close();
-
-        //File file = new File("sample.pdf");
-        //FileInputStream fis = new FileInputStream(file);
-        //byte [] data = new byte[(int)file.length()];
-       // fis.read(data);
-        //fis.close();
-      //  ByteArrayOutputStream bos = new ByteArrayOutputStream();
-      //  data = bos.toByteArray();
-
-      //   OutputStream out = new FileOutputStream("out.pdf");
-      //   out.write(data);
-      //   out.close();
+     
 
       File file = new File("sample.pdf");
  
@@ -95,7 +72,7 @@ public class pdf_read_write {
         byte[] bytes = bos.toByteArray();
  
         //below is the different part
-        File someFile = new File("java3.pdf");
+        File someFile = new File("byteToPDF.pdf");
         FileOutputStream fos = new FileOutputStream(someFile);
         fos.write(bytes);
         fos.flush();
